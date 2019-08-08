@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>首页</title>
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#img1").click(function(){
+					$("#search").toggle();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<nav id="menu" class="menu">
+			<!--banner-->
+			<div class="banner">
+				<img src="img/123.jpg" class="banner-img">
+				<div class="namepic">
+					<img src="img/路飞1.jpg" class="namepic-img">
+				</div>
+				<div class="name">旗木卡卡西</div>
+				<div class="name-title">我叫旗木卡卡西</div>
+			</div>			
+			<section class="menu-section">
+				<ul class="menu-section-list">
+					<li>
+						<a href="#" target="_blank">个人信息</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">论坛签名</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">我的帖子</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">我的评论</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">我的收藏</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">浏览历史</a>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-section">
+				<div class="signout">
+					<a href="#">退出</a>
+				</div>
+			</section>
+		</nav>
+		<main id="main" class="panel">
+			<div id="div1">
+				<div id="div1_1">
+					<!-- <button class="btn-hamburger js-slideout-toggle"></button>
+					<img src="img/路飞1.jpg" />
+					<span>我家养只猫咪</span> -->
+					<a href="#">登录/</a><a href="#">注册</a>
+				</div>
+				<!-- <div id="div1_2">
+					<span>小菜鸡</span>
+				</div> -->
+				<div id="div1_3">
+					<a href="#" id="img1" >
+						<img src="img/搜索.png"/>
+					</a>
+					<img src="img/铃铛.png" id="img2" />
+				</div>
+			</div>
+			<div class="search" style="display: none;" id="search">
+				<form action="" method="">
+					<input type="text" class="search-write"/>
+					<div id="searchbtn">搜索</div>
+				</form>
+			</div>
+			<div id="div2">
+				<img src="img/beijing.jpg" />
+			</div>
+			<div id="div3">
+			<span id="span1">热门</span>
+			<span id="span2">精华</span>
+		</div>
+			<div id="div4">
+			<div id="div4_1"><span>C++有什么公司推荐</span></div>
+			<div id="div4_2">
+				<div id="div4_2_1">
+					<img src="img/用户.png" />
+					<span>vbird</span>
+				</div>
+				<div id="div4_2_2">
+					<img src="img/时间.png" />
+					<span>1小时前</span>
+				</div>
+				<div id="div4_2_3">
+					<img src="img/对话.png" />
+					<span>3</span>
+				</div>
+			</div>
+		</div>
+			<div id="div4">
+			<div id="div4_1"><span>C++有什么公司推荐</span></div>
+			<div id="div4_2">
+				<div id="div4_2_1">
+					<img src="img/用户.png" />
+					<span>vbird</span>
+				</div>
+				<div id="div4_2_2">
+					<img src="img/时间.png" />
+					<span>1小时前</span>
+				</div>
+				<div id="div4_2_3">
+					<img src="img/对话.png" />
+					<span>3</span>
+				</div>
+			</div>
+		</div>
+			<div id="div4">
+			<div id="div4_1"><span>C++有什么公司推荐</span></div>
+			<div id="div4_2">
+				<div id="div4_2_1">
+					<img src="img/用户.png" />
+					<span>vbird</span>
+				</div>
+				<div id="div4_2_2">
+					<img src="img/时间.png" />
+					<span>1小时前</span>
+				</div>
+				<div id="div4_2_3">
+					<img src="img/对话.png" />
+					<span>3</span>
+				</div>
+			</div>
+		</div>
+			<div id="div4">
+			<div id="div4_1"><span>C++有什么公司推荐</span></div>
+			<div id="div4_2">
+				<div id="div4_2_1">
+					<img src="img/用户.png" />
+					<span>vbird</span>
+				</div>
+				<div id="div4_2_2">
+					<img src="img/时间.png" />
+					<span>1小时前</span>
+				</div>
+				<div id="div4_2_3">
+					<img src="img/对话.png" />
+					<span>3</span>
+				</div>
+			</div>
+		</div>
+			<div id="div4">
+			<div id="div4_1"><span>C++有什么公司推荐</span></div>
+			<div id="div4_2">
+				<div id="div4_2_1">
+					<img src="img/用户.png" />
+					<span>vbird</span>
+				</div>
+				<div id="div4_2_2">
+					<img src="img/时间.png" />
+					<span>1小时前</span>
+				</div>
+				<div id="div4_2_3">
+					<img src="img/对话.png" />
+					<span>3</span>
+				</div>
+			</div>
+		</div>
+		</main>
+		<script type="text/javascript" src="js/slideout.min.js"></script>
+		<script type="text/javascript">
+			var slideout = new Slideout({
+				'panel': document.getElementById('main'),
+				'menu': document.getElementById('menu'),
+				'padding': 256,
+				'tolerance': 70
+			  });
+		
+			  document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+				slideout.toggle();
+			  });
+		
+			  document.querySelector('.menu').addEventListener('click', function(eve) {
+				if (eve.target.nodeName === 'A') { slideout.close(); }
+			  });
+			 function aload(t){"use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t}
+			window.onload = function(){
+				aload();
+				document.querySelector('.iphone').className += ' shown';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+#div_1{
+	background-color: #464a4e;
+	width: 100%;
+	height: 50px;
+}
+#div_1_1{
+	height: 50px;
+	line-height: 50px;
+	color: #bcbcbc;
+	align-items: center;
+	padding-left: 10px;
+}
+.div_com{
+	border-bottom: solid 1px #bcbcbc;
+	padding-left: 10px;
+}
+#title{
+	height: 50px;
+	line-height: 50px;
+	font-weight: bolder;
+}
+#LZ{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: #BCBCBC;
+}
+#LZ div{
+	padding-left: 10px;
+}
+#LZ_1 img{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+#div_2{
+	text-align: center;
+}
+#post_img{
+	width: 250px;
+	height: 250px;
+}
+#LZ_2 #user{
+	color: #ffcc00;
+}
+#LZ_3{
+	height: 100%;
+}
+#post_date{
+	font-size: 12px;
+	color: #BCBCBC;
+	text-align: right;
+}
+table tr:nth-child(even){
+	background-color: #fffbf5;
+}
+table,tr,td{
+	width: 100%;
+	margin: 0;
+	border: none;
+}
+#div_dibu{
+	font-size: 12px;
+	color: #BCBCBC;
+	text-align: center;
+}
+#edit{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#edit button{
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #464a4e;
+}
+#edit img{
+	height: 20px;
+	width: 20px;
+}
+#post_txt{
+	font-size: 14px;
+}
+#post_comments{
+	font-size: 14px;
+}

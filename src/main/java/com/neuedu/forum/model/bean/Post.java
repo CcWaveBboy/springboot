@@ -1,13 +1,14 @@
 package com.neuedu.forum.model.bean;
 
-import java.sql.Timestamp;
 
 public class Post {
 
 	private int postid;
 	private String title;
 	private int userid;
-	private Timestamp datetime;
+	private String imgurl;
+	private String posttxt;
+	private String postingtime;
 	private int numberofreplies;
 	private int good;
 	private int bad;
@@ -30,12 +31,7 @@ public class Post {
 	public void setUserid(int userid) {
 		this.userid = userid;
 	}
-	public Timestamp getDatetime() {
-		return datetime;
-	}
-	public void setDatetime(Timestamp datetime) {
-		this.datetime = datetime;
-	}
+	
 	public int getNumberofreplies() {
 		return numberofreplies;
 	}
@@ -53,6 +49,25 @@ public class Post {
 	}
 	public void setBad(int bad) {
 		this.bad = bad;
+	}
+	public String getPosttxt() {
+		return posttxt;
+	}
+	public void setPosttxt(String posttxt) {
+		this.posttxt = posttxt;
+	}
+
+	public String getImgurl() {
+		return imgurl;
+	}
+	public void setImgurl(String imgurl) {
+		this.imgurl = imgurl;
+	}
+	public String getPostingtime() {
+		return postingtime;
+	}
+	public void setPostingtime(String postingtime) {
+		this.postingtime = postingtime;
 	}
 	
 }

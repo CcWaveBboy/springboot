@@ -1,6 +1,6 @@
 package com.neuedu.forum.model.bean;
 
-public class Collection {
+public class CollectionNew {
 
 	private int collectionid;
 	private int userid;

@@ -6,6 +6,8 @@ public class Comment {
 	private int userid;
 	private int postid;
 	private String comments;
+	private String commenttime;
+	private Information information;
 	public int getCommentid() {
 		return commentid;
 	}
@@ -29,5 +31,17 @@ public class Comment {
 	}
 	public void setComments(String comments) {
 		this.comments = comments;
+	}
+	public String getCommenttime() {
+		return commenttime;
+	}
+	public void setCommenttime(String commenttime) {
+		this.commenttime = commenttime;
+	}
+	public Information getInformation() {
+		return information;
+	}
+	public void setInformation(Information information) {
+		this.information = information;
 	}
 }

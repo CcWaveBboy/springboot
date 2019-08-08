@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neuedu.forum.model.mapper.PostMapper">
+	
+	<select id="selectPostByPostid" parameterType="int" resultMap="infomationResult">
+		select i.*,p.imgurl pimgurl,p.title,p.posttxt,p.postingtime
+		from information i left join post p
+		on i.userid=p.userid
+		where postid=#{postid}
+	</select>
+	<resultMap type="Information" id="infomationResult">
+		<result property="userid" column="userid"/>	
+		<result property="imgurl" column="imgurl"/>
+		<result property="username" column="username"/>
+		<result property="userlevel" column="userlevel"/>
+		<result property="prestigei" column="prestigei"/>
+		<result property="numberofPosts" column="numberofPosts"/>
+		<association property="post" column="userid" javaType="Post" resultMap="postResult"></association>
+	</resultMap>
+	<resultMap type="Post" id="postResult">
+		<result property="title" column="title"/>
+		<result property="imgurl" column="pimgurl"/>
+		<result property="posttxt" column="posttxt"/>
+		<result property="postingtime" column="postingtime"/>
+	</resultMap>
+	
+	<select id="selectCommentByPostid" parameterType="int" resultMap="commentResult">
+		select i.*,c.comments,c.commenttime
+		from comment c left join information i
+		on i.userid=c.userid
+		where postid=#{postid}
+		order by commentid
+	</select>
+	<resultMap type="Comment" id="commentResult">
+		<result property="comments" column="comments"/>
+		<result property="commenttime" column="commenttime"/>
+		<association property="information" column="userid" javaType="Information" resultMap="infoResult"></association>
+	</resultMap>
+	<resultMap type="Information" id="infoResult">
+		<result property="userid" column="userid"/>	
+		<result property="imgurl" column="imgurl"/>
+		<result property="username" column="username"/>
+		<result property="userlevel" column="userlevel"/>
+		<result property="prestigei" column="prestigei"/>
+		<result property="numberofPosts" column="numberofPosts"/>
+		
+	</resultMap>
+	
+</mapper>

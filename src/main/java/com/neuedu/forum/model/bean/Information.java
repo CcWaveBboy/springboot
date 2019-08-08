@@ -4,6 +4,7 @@ public class Information {
 
 	private int userid;
 	private String username;
+	private String userlevel;
 	private String password;
 	private String personalSignature;
 	private String sex;
@@ -12,6 +13,7 @@ public class Information {
 	private String mobile;
 	private int prestigei;
 	private int numberofPosts;
+	private Post post;
 	public int getUserid() {
 		return userid;
 	}
@@ -71,5 +73,18 @@ public class Information {
 	}
 	public void setNumberofPosts(int numberofPosts) {
 		this.numberofPosts = numberofPosts;
+	}
+	
+	public String getUserlevel() {
+		return userlevel;
+	}
+	public void setUserlevel(String userlevel) {
+		this.userlevel = userlevel;
+	}
+	public Post getPost() {
+		return post;
+	}
+	public void setPost(Post post) {
+		this.post = post;
 	}
 }
